@@ -1,12 +1,18 @@
 <?php
 class Product_model extends CI_Model {
 
-    public function getProducts(){
-        $this->db->order_by('id');
-        $this->db->where('status', 1);
-        $query = $this->db->get('product');
-        return $query->result();
+    public function getProducts($arr){
+        // $this->db->order_by('id');
+        // $this->db->where('status', 1);
+        // $query = $this->db->get('product');
+        // return $query->result_array();
+
+
+        $this->db->select('*');
+        $query = $this->db->get_where('product_order.product', $arr);
+        return $query->result_array();
     }
+
 
     public function getProductsByOrderId($id){
         $this->db->join('product_order', 'product_order.product_id = product.id');

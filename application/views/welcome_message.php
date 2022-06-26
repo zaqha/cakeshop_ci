@@ -4,8 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="pt-BR">
 <?php $this->load->view('_partials/head'); ?>
 <body>
-<?php $this->load->view('_partials/header'); ?>
+ 
 <div class="container container-person mt-5 p-5">
+
+<?php echo $this->session->userdata('name');
+
+// var_dump($_SESSION);
+?>
+
     <?=write_message()?>
     <?php
     $action_form = '/order/save/';
