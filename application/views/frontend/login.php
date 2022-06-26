@@ -1,8 +1,4 @@
 <div style="margin-top: 100px;" class="container">
-<h2>第一次購物</h2>
-<a href="?do=reg">
-    <img src="icon/0413.jpg">
-</a>
 <h2>會員登入</h2>
 <table class="all">
     <tr>
@@ -16,13 +12,6 @@
     <tr>
         <td class="tt ct">驗證碼</td>
         <td class="pp">
-        <?php
-            $a=rand(10,99);
-            $b=rand(10,99);
-            
-            $_SESSION['ans']=$a+$b;
-            echo $a . " + " . $b . " = "
-        ?>
         <input type="text" name="chk" id="chk"></td>
     </tr>
 </table>

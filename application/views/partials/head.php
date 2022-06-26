@@ -1,4 +1,4 @@
-<!-- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>shop</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -10,4 +10,4 @@
     <link href="./css/css.css" rel="stylesheet" type="text/css">
     <?php $this->load->view('js/js.js'); ?>
     <?php $this->load->view('js/jquery-3.4.1.min.js'); ?>
-</head> -->
+</head>
