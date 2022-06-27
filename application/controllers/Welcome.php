@@ -7,14 +7,6 @@ class Welcome extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('product_model','product');
-
-				// $newdata = array(
-				// 	'username'  => 'johndoe',
-				// 	'email'     => 'johndoe@some-site.com',
-				// 	'logged_in' => TRUE
-				// );
-				
-				// $this->session->set_userdata($newdata);
     }
 
 	public function index()
